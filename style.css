@@ -10,6 +10,10 @@ body {
   background-color: #081b29;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .head {
   position: fixed;
   top: 0;
@@ -55,13 +59,13 @@ body {
 .home {
   position: relative;
   width: 100%;
-  justify-content: space-between;
   height: 100vh;
   background: url();
   background-size: cover;
   background-position: center;
   display: flex;
   align-items: center;
+  justify-content: space-between;
   padding: 70px 10% 0;
 }
 
@@ -132,6 +136,51 @@ body {
   animation-delay: 0.7s;
 }
 
+.home-image {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.home-image img {
+  width: 380px;
+  max-width: 100%;
+  height: auto;
+  display: block;
+
+  /* shape */
+  border-radius: 24px; /* soft rounded corners */
+
+  /* border (optional but clean) */
+  border: 1px solid rgba(255, 255, 255, 0.12);
+
+  /* depth */
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25), 0 0 20px rgba(0, 238, 255, 0.15); /* subtle neon hint */
+
+  /* visual polish */
+  background: rgba(255, 255, 255, 0.02);
+  backdrop-filter: blur(2px);
+
+  /* smooth interactions */
+  transition: transform 0.35s ease, box-shadow 0.35s ease;
+}
+.home-image img:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 20px 45px rgba(0, 0, 0, 0.35), 0 0 30px rgba(0, 238, 255, 0.35);
+}
+.image-tag-home {
+  opacity: 0;
+  transform: translateX(60px);
+  animation: imageReveal 1s ease forwards;
+  animation-delay: 3.6s;
+}
+
+@keyframes imageReveal {
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
 .btn {
   display: inline-block;
   padding: 12px 28px;
@@ -163,6 +212,7 @@ body {
   grid-template-columns: repeat(2, 1fr);
   align-items: center;
   gap: 1.5rem;
+  padding-right: 30px;
 }
 
 .about-img img {
@@ -389,6 +439,146 @@ body {
   font-size: 10px;
   margin-right: 8px;
   color: #0ef;
+}
+
+/*-----------------CONTACT----------------*/
+
+.contact {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  gap: 3rem;
+  padding-left: 40px;
+  margin-top: 130px;
+  color: aliceblue;
+  font-size: 12px;
+  line-height: 1.4rem;
+  margin-bottom: 4rem;
+  overflow: hidden;
+}
+.contact-container {
+  padding: 90px;
+}
+.contact-title span {
+  color: #0ef;
+  letter-spacing: 1px;
+}
+.contact-title h4 {
+  margin-top: 10px;
+  color: #ededed;
+  font-size: 20px;
+  font-weight: 600;
+}
+.contact-text p {
+  margin-top: 20px;
+  color: antiquewhite;
+  font-size: 15px;
+  line-height: 20px;
+  margin-bottom: 2rem;
+}
+.contact-list {
+  margin-bottom: 3rem;
+}
+
+.contact-list li {
+  margin-bottom: 14px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 18px;
+  font-weight: 600;
+  color: #ededed;
+}
+
+.contact-list i {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  color: #081b29;
+  background: #0ef;
+  border-radius: 50%;
+  font-size: 20px;
+  transition: 0.3s ease;
+}
+
+.contact-list li:hover i {
+  background: transparent;
+  color: #0ef;
+  border: 2px solid #0ef;
+}
+.contact-form {
+  width: 100%;
+  max-width: 520px;
+  justify-self: end; /* safer than end */
+  padding-right: 30px;
+}
+
+.contact-form form {
+  position: relative;
+  width: 100%;
+}
+
+/* Inputs & textarea */
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 12px 14px;
+  background: #081b29;
+  color: #0ef;
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 12px;
+  border-radius: 8px;
+  border: 2px solid #0ef;
+  outline: none;
+  box-sizing: border-box;
+  transition: 0.3s ease;
+}
+
+/* Placeholder */
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+  color: #7fdfff;
+  font-weight: 500;
+}
+
+/* Focus effect */
+.contact-form input:focus,
+.contact-form textarea:focus {
+  box-shadow: 0 0 8px #0ef;
+  background: rgba(0, 238, 255, 0.05);
+}
+
+/* Textarea */
+.contact-form textarea {
+  resize: none;
+  height: 150px; /* reduced for balance */
+}
+
+/* Send button */
+.contact-form .send {
+  display: inline-block;
+  padding: 12px 28px;
+  background: #0ef;
+  border-radius: 40px;
+  font-size: 16px;
+  color: #081b29;
+  letter-spacing: 1px;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s ease;
+  box-shadow: 0 0 5px #0ef, 0 0 25px #0ef;
+}
+
+/* Hover */
+.contact-form .send:hover {
+  background: transparent;
+  color: #0ef;
+  border: 2px solid #0ef;
+  box-shadow: 0 0 10px #0ef, 0 0 30px #0ef;
 }
 
 /* ----------- PROJECTS ----------- */

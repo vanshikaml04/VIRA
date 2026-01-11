@@ -19,30 +19,73 @@
     <header class="head">
       <a href="#" class="logo">VIRA</a>
       <nav class="navbar">
-        <a href="#" style="--i: 1" class="active">Home</a>
-        <a href="#" style="--i: 2">About</a>
-        <a href="#" style="--i: 3">Skill</a>
-        <a href="#" style="--i: 4">Experience</a>
-        <a href="#" style="--i: 5">Projects</a>
-        <a href="#" style="--i: 6">Contact</a>
+        <a href="#home" style="--i: 1" class="active">Home</a>
+        <a href="#about" style="--i: 2">About</a>
+        <a href="#skills" style="--i: 3">Skill</a>
+        <a href="#experience" style="--i: 4">Experience</a>
+        <a href="#projects" style="--i: 5">Projects</a>
+        <a href="#contact" style="--i: 6">Contact</a>
       </nav>
     </header>
 
-    <section class="home">
+    <section class="home" id="home">
       <div class="home-content">
-        <h3>Hello, It's Me</h3>
-        <h1>Vanshika Rani</h1>
-        <h2>And I'm a <span class="text"></span></h2>
-        <div class="home-sci">
-          <a href="#" style="--i: 7"><i class="bx bxl-github"></i></a>
-          <a href="#" style="--i: 8"><i class="bx bxl-linkedin"></i></a>
-          <a href="#" style="--i: 9"><i class="bx bx-code-alt"></i></a>
-          <a href="#" style="--i: 10"><i class="bx bxl-visual-studio"></i></a>
-          <a href="mailto:ranivanshika849@gmail.com" style="--i: 11"
-            ><i class="bx bxs-envelope"></i
-          ></a>
+        <div class="home-details">
+          <h3>Hello, It's Me</h3>
+          <h1>Vanshika Rani</h1>
+          <h2>And I'm a <span class="text"></span></h2>
+          <div class="home-sci">
+            <a
+              href="https://github.com/vanshikaml04"
+              style="--i: 7"
+              target="_blank"
+              title="GitHub"
+            >
+              <i class="bx bxl-github"></i>
+            </a>
+            <a
+              href="https://www.linkedin.com/in/vanshika-rani-4104aa2ab"
+              style="--i: 8"
+              target="_blank"
+              title="LinkedIn"
+            >
+              <i class="bx bxl-linkedin"></i>
+            </a>
+            <a
+              href="https://unstop.com/u/vanshran5810"
+              style="--i: 9"
+              target="_blank"
+              title="Unstop Portfolio"
+            >
+              <i class="bx bx-code-alt"></i>
+            </a>
+            <a
+              href="https://www.geeksforgeeks.org/profile/ranivanskkgk?tab=activity"
+              style="--i: 10"
+              target="_blank"
+              title="GeeksforGeeks"
+            >
+              <i class="bx bxl-visual-studio"></i>
+            </a>
+            <a
+              href="mailto:ranivanshika849@gmail.com"
+              style="--i: 11"
+              title="Email"
+            >
+              <i class="bx bxs-envelope"></i>
+            </a>
+          </div>
+
+          <a href="#" class="btn" id="listen-btn">GET STARTED</a>
         </div>
-        <a href="#" class="btn" id="listen-btn">GET STARTED</a>
+      </div>
+      <div class="home-image">
+        <img
+          style="--i: 12"
+          src="Images/VIRA.png"
+          alt="Home-image"
+          class="image-tag-home"
+        />
       </div>
     </section>
 
@@ -62,12 +105,12 @@
       </div>
     </section>
 
-    <section>
+    <section id="skills">
       <div class="services" id="services">
         <div class="container">
           <h1 class="sub-title">My <span>Skills</span></h1>
           <div class="services-list">
-            <div style="--i: 11">
+            <div style="--i: 13">
               <i class="bx bx-server"></i>
               <h2>Backend Development (Java + Node.js)</h2>
               <p>
@@ -77,7 +120,7 @@
               </p>
               <a href="#" class="read">Learn More</a>
             </div>
-            <div style="--i: 12">
+            <div style="--i: 14">
               <i class="bx bx-shield-alt-2"></i>
               <h2>Secure Authentication (JWT, Argon2, RBAC, 2FA)</h2>
               <p>
@@ -87,7 +130,7 @@
               </p>
               <a href="#" class="read">Learn More</a>
             </div>
-            <div style="--i: 13">
+            <div style="--i: 15">
               <i class="bx bx-git-branch"></i>
               <h2>Data Structures & Algorithms (Java)</h2>
               <p>
@@ -97,7 +140,7 @@
               </p>
               <a href="#" class="read">Learn More</a>
             </div>
-            <div style="--i: 14">
+            <div style="--i: 16">
               <i class="bx bx-code-alt"></i>
               <h2>Full-Stack Basics (HTML, CSS, JS)</h2>
               <p>
@@ -107,7 +150,7 @@
               </p>
               <a href="#" class="read">Learn More</a>
             </div>
-            <div style="--i: 15">
+            <div style="--i: 17">
               <i class="bx bx-brain"></i>
               <h2>Machine Learning Fundamentals</h2>
               <p>
@@ -117,7 +160,7 @@
               </p>
               <a href="#" class="read">Learn More</a>
             </div>
-            <div style="--i: 16">
+            <div style="--i: 18">
               <i class="bx bx-data"></i>
               <h2>API Design & Database Handling</h2>
               <p>
@@ -132,7 +175,7 @@
       </div>
     </section>
 
-    <section class="Experience">
+    <section class="Experience" id="experience">
       <div class="Experience-container">
         <h1 class="Experience-title">My <span>EXPERIENCE</span></h1>
         <div class="Experience-list">
@@ -189,7 +232,7 @@
       </div>
     </section>
 
-    <section class="project">
+    <section class="project" id="projects">
       <div class="project-container">
         <h1 class="project-title">My <span>PROJECTS</span></h1>
 
@@ -197,14 +240,17 @@
           <!-- SWIPER -->
           <div class="slide-container swiper">
             <div class="card-wrapper swiper-wrapper">
-              
               <!-- SLIDE 1 -->
 
               <div class="card swiper-slide">
                 <div class="image-content">
                   <span class="overlay"></span>
                   <div class="card-image">
-                    <img src="./projects/HireMeet.png" class="card-img" alt="" />
+                    <img
+                      src="./projects/HireMeet.png"
+                      class="card-img"
+                      alt=""
+                    />
                   </div>
                 </div>
                 <div class="card-content">
@@ -358,6 +404,40 @@
             <div class="swiper-pagination"></div>
           </div>
         </div>
+      </div>
+    </section>
+
+    <section id="contact" class="contact">
+      <div class="contact-text">
+        <h1 class="contact-title"><span>CONTACT</span></h1>
+        <h4>Let's Work Together</h4>
+        <p>
+          I’m always open to discussing new projects, creative ideas, or
+          opportunities to collaborate. Whether you need a responsive website, a
+          user-friendly interface, or help bringing your ideas to life through
+          code, feel free to reach out. I believe good communication and clear
+          goals create great results. Let’s connect and build something
+          meaningful together.
+        </p>
+        <div class="contact-list">
+          <li><i class="bx bxs-send"></i>ranivanshika849@gmail.com</li>
+          <li><i class="bx bxs-phone"></i>8826056769</li>
+        </div>
+      </div>
+      <div class="contact-form">
+        <form action="">
+          <input type="text" placeholder="Enter Your Name" required />
+          <input type="email" placeholder="Enter Your Email" required />
+          <input type="text" placeholder="Enter Your Subject" />
+          <textarea
+            name=""
+            id=""
+            cols="40"
+            rows="10"
+            placeholder="Enter Your Message"
+          ></textarea>
+          <input type="submit" value="SUBMIT" class="send" />
+        </form>
       </div>
     </section>
 
